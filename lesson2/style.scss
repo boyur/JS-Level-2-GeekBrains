@@ -1,0 +1,115 @@
+table {
+  border: solid 1px gray;
+}
+tr {
+  height: 40px;
+}
+
+td {
+  width: 40px;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+#info {
+  font-size: 24px;
+}
+
+.figureKingWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: 2px 1px;
+}
+
+.figureQueenWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -35px 2px;
+}
+
+.figureElephantWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -72px 1px;
+}
+
+.figureHorseWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -109px 1px;
+}
+
+.figureRookWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -145px 1px;
+}
+
+.figurePawnWhite {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -182px 1px;
+}
+
+.figureKingBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: 2px 37px;
+}
+
+.figureQueenBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -35px 37px;
+}
+
+.figureElephantBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -72px 37px;
+}
+
+.figureHorseBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -109px 37px;
+}
+
+.figureRookBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -145px 37px;
+}
+
+.figurePawnBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -182px 37px;
+}

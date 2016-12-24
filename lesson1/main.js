@@ -4,17 +4,17 @@ class ChessBoard {
     this.div = document.querySelector(div);
   }
 
-  createBoard(size) {
+  createBoard() {
     console.log(this.div);
 
     let table = document.createElement('table');
 
-    for (let a = 0; a < size; a++) {
+    for (let a = 0; a < 8; a++) {
       let tr = document.createElement('tr');
 
-      for (let b = 0; b < size; b++) {
+      for (let b = 0; b < 8; b++) {
         let td = document.createElement('td');
-        td.setAttribute("data-position", `${String.fromCharCode(65 + b)}${size - a}`);
+        td.setAttribute("data-position", `${String.fromCharCode(65 + b)}${8 - a}`);
         tr.appendChild(td);
 
         if ((a%2 == 0 && b%2 == 0) || (a%2 != 0 && b%2 != 0) ) {
@@ -46,5 +46,5 @@ class ChessBoard {
 
 const chess = new ChessBoard('#board');
 
-chess.createBoard(8);
+chess.createBoard();
 chess.activateBoard('#info');
