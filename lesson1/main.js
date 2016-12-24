@@ -14,7 +14,7 @@ class ChessBoard {
 
       for (let b = 0; b < size; b++) {
         let td = document.createElement('td');
-        td.setAttribute("data-position", `${String.fromCharCode(65 + b)}${1 + a}`);
+        td.setAttribute("data-position", `${String.fromCharCode(65 + b)}${size - a}`);
         tr.appendChild(td);
 
         if ((a%2 == 0 && b%2 == 0) || (a%2 != 0 && b%2 != 0) ) {
@@ -35,6 +35,8 @@ class ChessBoard {
     let info = document.querySelector(div);
 
     this.div.addEventListener('click', function (e) {
+      if (e.target.tagName != 'TD') return;
+
       info.textContent = e.target.attributes['data-position'].value;
       console.log(e.target.attributes['data-position'].value);
     })
