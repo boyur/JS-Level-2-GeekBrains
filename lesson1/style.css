@@ -1,0 +1,16 @@
+table {
+  border: solid 1px gray; }
+
+tr {
+  height: 40px; }
+
+td {
+  width: 40px;
+  padding: 0; }
+  td:hover {
+    opacity: 0.7; }
+
+#info {
+  font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */

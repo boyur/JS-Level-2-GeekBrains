@@ -1,0 +1,68 @@
+table {
+  border: solid 1px gray; }
+
+tr {
+  height: 40px; }
+
+td {
+  width: 40px;
+  padding: 0; }
+  td:hover {
+    opacity: 0.7; }
+
+#info {
+  font-size: 24px; }
+
+.figure {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%; }
+  .figure:hover {
+    cursor: pointer; }
+
+.figureKingWhite {
+  background-position: 2px 1px; }
+
+.figureQueenWhite {
+  background-position: -35px 2px; }
+
+.figureElephantWhite {
+  background-position: -72px 1px; }
+
+.figureHorseWhite {
+  background-position: -109px 1px; }
+
+.figureRookWhite {
+  background-position: -145px 1px; }
+
+.figurePawnWhite {
+  background-position: -182px 1px; }
+
+.figureKingBlack {
+  background-position: 2px 37px; }
+
+.figureQueenBlack {
+  background-position: -35px 37px; }
+
+.figureElephantBlack {
+  background-position: -72px 37px; }
+
+.figureHorseBlack {
+  background-position: -109px 37px; }
+
+.figureRookBlack {
+  background-position: -145px 37px; }
+
+.figurePawnBlack {
+  background-position: -182px 37px; }
+
+.figurePawnBlack {
+  height: 40px;
+  width: 40px;
+  background-image: url(./chess.png);
+  background-size: 550%;
+  background-position: -182px 37px; }
+
+/*# sourceMappingURL=style.css.map */
