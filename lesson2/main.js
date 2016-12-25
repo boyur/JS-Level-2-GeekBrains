@@ -250,18 +250,43 @@ function creatFigure(idFigure, obj) {
       return;
     }
 
+    let target = e.target;
+
     console.log(targetItem);
 
     targetItem.style.top = e.clientY - targetOffset.y + "px";
     targetItem.style.left = e.clientX - targetOffset.x + "px";
     console.log(e.clientX);
     console.log(targetOffset.x);
-    console.log(e.target.style.top);
+    console.log(target.style.top);
   });
 
   // Отпустить мыш
-  div.addEventListener("mouseup", function () {
+  div.addEventListener("mouseup", function (e) {
+    let target = e.target;
+    let position = false;
     flag = false;
     targetItem = null;
+    console.log(target);
+
+    // Смотрим что за позиция
+    let elem = document.elementFromPoint(e.clientX, e.clientY);
+
+    if (elem.tagName != 'TD') {
+      elem.style.display = 'none';
+      position = document.elementFromPoint(e.clientX, e.clientY).getAttribute('data-position');
+      console.log(position);
+      elem.style.display = 'block';
+    }
+
+    // Меняем позицию
+    console.log(e.target);
+    e.target.remove();
+
+    let td = document.querySelector(`td[data-position="${position}"]`);
+    console.log(td);
+    td.appendChild(target);
+    target.style.top = '0px';
+    target.style.left = '0px';
   });
 }
