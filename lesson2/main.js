@@ -3,7 +3,6 @@ class Chess {
   constructor(div) {
     this.div = document.querySelector(div);
     this.startPosition = {};
-    this.history = {};
   }
 
   // Генерация шахматной доски
@@ -111,6 +110,7 @@ class Chess {
     div.addEventListener("mouseup", function (e) {
       let target = e.target;
       let position = false;
+      let log = false;
       flag = false;
       targetItem = null;
       console.log(target);
@@ -124,6 +124,11 @@ class Chess {
         console.log(position);
         elem.style.display = 'block';
       }
+
+      // Логи
+      log = `Фигура ${e.target.id} пошла на ${position}`;
+      printLogs(log);
+
 
       // Меняем позицию
       console.log(e.target);
@@ -164,6 +169,13 @@ class Chess {
     });
   }
 
+}
+
+function printLogs(log) {
+  let div = document.createElement('div');
+  let logInfo = document.getElementById('info');
+  div.textContent = log;
+  logInfo.appendChild(div);
 }
 
 const chess = new Chess('#board');

@@ -15,7 +15,25 @@ td {
 }
 
 #info {
-  font-size: 24px;
+  margin-top: 50px;
+  width: 335px;
+  height: 335px;
+  border: 1px solid gray;
+  margin-right: 50px;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    box-sizing: border-box;
+  }
+
+  div {
+    padding: 5px;
+    font-size: 16px;
+    color: darkgrey;
+  }
 }
 
 .figure {
