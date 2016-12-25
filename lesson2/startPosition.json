@@ -1,0 +1,134 @@
+{
+  "white": {
+    "w-pawn1": {
+      "pos": "A2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn2": {
+      "pos": "B2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn3": {
+      "pos": "C2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn4": {
+      "pos": "D2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn5": {
+      "pos": "E2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn6": {
+      "pos": "F2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn7": {
+      "pos": "G2",
+      "class": "figurePawnWhite"
+    },
+    "w-pawn8": {
+      "pos": "H2",
+      "class": "figurePawnWhite"
+    },
+    "w-rook1": {
+      "pos": "A1",
+      "class": "figureRookWhite"
+    },
+    "w-horse1": {
+      "pos": "B1",
+      "class": "figureHorseWhite"
+    },
+    "w-elephant1": {
+      "pos": "C1",
+      "class": "figureElephantWhite"
+    },
+    "w-queen": {
+      "pos": "D1",
+      "class": "figureQueenWhite"
+    },
+    "w-king": {
+      "pos": "E1",
+      "class": "figureKingWhite"
+    },
+    "w-elephant2": {
+      "pos": "F1",
+      "class": "figureElephantWhite"
+    },
+    "w-horse2": {
+      "pos": "G1",
+      "class": "figureHorseWhite"
+    },
+    "w-rook2": {
+      "pos": "H1",
+      "class": "figureRookWhite"
+    }
+  },
+  "black": {
+    "b-pawn1": {
+      "pos": "A7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn2": {
+      "pos": "B7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn3": {
+      "pos": "C7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn4": {
+      "pos": "D7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn5": {
+      "pos": "E7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn6": {
+      "pos": "F7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn7": {
+      "pos": "G7",
+      "class": "figurePawnBlack"
+    },
+    "b-pawn8": {
+      "pos": "H7",
+      "class": "figurePawnBlack"
+    },
+    "b-rook1": {
+      "pos": "A8",
+      "class": "figureRookBlack"
+    },
+    "b-horse1": {
+      "pos": "B8",
+      "class": "figureHorseBlack"
+    },
+    "b-elephant1": {
+      "pos": "C8",
+      "class": "figureElephantBlack"
+    },
+    "b-queen": {
+      "pos": "D8",
+      "class": "figureQueenBlack"
+    },
+    "b-king": {
+      "pos": "E8",
+      "class": "figureKingBlack"
+    },
+    "b-elephant2": {
+      "pos": "F8",
+      "class": "figureElephantBlack"
+    },
+    "b-horse2": {
+      "pos": "G8",
+      "class": "figureHorseBlack"
+    },
+    "b-rook2": {
+      "pos": "H8",
+      "class": "figureRookBlack"
+    }
+  }
+}
