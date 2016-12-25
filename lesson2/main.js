@@ -209,10 +209,59 @@ for (let key in startPosition["black"]) {
 function creatFigure(idFigure, obj) {
   let div = document.createElement('div');
   div.id = idFigure;
+  div.classList.add('figure');
   div.classList.add(obj[idFigure]['class']);
+  div.style.top = '0px';
+  div.style.left = '0px';
   let td = document.querySelector(`td[data-position="${obj[idFigure]['pos']}"]`);
   console.log(td);
   td.appendChild(div);
 
   console.log(`Фигура ${idFigure} создана!`);
+
+  // Вешаю обработчики
+  let targetItem = {};
+  let targetOffset = {};
+  let flag = false;
+
+  // Зажатие клавиши мыши
+  div.addEventListener("mousedown", function (e) {
+
+    if (e.target.tagName == "BODY" || e.target.tagName == "TABLE") {
+      return;
+    }
+
+    flag = true;
+
+    targetItem = e.target;
+
+    console.log(targetItem);
+
+    targetOffset.x = e.clientX - e.target.style.left.replace(/[^-0-9]/gim,'');
+    targetOffset.y = e.clientY - e.target.style.top.replace(/[^-0-9]/gim,'');
+
+    console.log(`x: ${e.target.style.top}; y:${e.target.style.left}`);
+    console.log(targetOffset);
+  });
+
+  // Движение мыши
+  div.addEventListener("mousemove", function (e) {
+    if (!flag) {
+      return;
+    }
+
+    console.log(targetItem);
+
+    targetItem.style.top = e.clientY - targetOffset.y + "px";
+    targetItem.style.left = e.clientX - targetOffset.x + "px";
+    console.log(e.clientX);
+    console.log(targetOffset.x);
+    console.log(e.target.style.top);
+  });
+
+  // Отпустить мыш
+  div.addEventListener("mouseup", function () {
+    flag = false;
+    targetItem = null;
+  });
 }
